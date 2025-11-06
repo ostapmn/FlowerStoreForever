@@ -1,0 +1,15 @@
+GET http://localhost:8080/flowers
+
+###
+POST http://localhost:8080/flowers
+Content-Type: application/json
+
+{
+  "flowerType": "TULIP",
+  "flowerColor": "YELLOW",
+  "price": 5.00,
+  "sepalLength": 3.25
+}
+
+###
+GET http://localhost:8080/flowers
