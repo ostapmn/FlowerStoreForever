@@ -17,7 +17,7 @@ public class FlowerBucket {
     }
 
     public double getPrice() {
-        return flowerPacks.stream().mapToDouble(pack -> pack.getPrice()).sum();
+        return flowerPacks.stream().mapToDouble(FlowerPack::getPrice).sum();
     }
 
 }

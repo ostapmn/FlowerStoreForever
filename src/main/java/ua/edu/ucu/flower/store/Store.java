@@ -15,8 +15,4 @@ public class Store {
         inventory.add(flower);
     }
 
-    // public List<Flower> searchFlower(Flower flower) {
-    //     return inventory.stream().filter(f -> f.matches(flower))
-    //                             .collect(Collectors.toList());
-    // }
 }
