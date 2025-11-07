@@ -58,4 +58,13 @@ public class DecoratorsTest {
         String expectedDescription = "Flower Bucket, placed in a basket";
         assertEquals(expectedDescription, basketBucket.getDescription());
     }
+
+    @Test
+    public void noDecoratorTest(){
+        Item bucket = new Item("Flower Bucket", flowerBucket);
+        double expectedPrice = 0;
+        assertEquals(expectedPrice, bucket.getPrice());
+        String expectedDescription = "Flower Bucket";
+        assertEquals(expectedDescription, bucket.getDescription());
+    }
 }
